@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/black.css">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<!-- Title Slide -->
+				<section data-transition="none" data-background-image="img/sad.png">
+					<h1>Technical Debt</h1>
+				</section>
+
+				<!-- State of WebApp -->
+				<section data-transition="none">
+					<h2>State of WebApp</h2>
+					<img src="img/current_state.png"/>
+				</section>
+
+				<section data-transition="none">
+					<h2>State of WebApp</h2>
+					<img src="img/current_state_2.png"/>
+				</section>
+
+				<section data-auto-animate data-transition="none"  data-autoslide="1500">
+					<h2>Old still matter</h2>
+				</section>
+
+				<section data-auto-animate data-transition="none">
+					<h2>Old still matter</h2>
+					<h3>...right?</h3>
+				</section>
+
+				<!-- Performance Issues -->
+				<section data-transition="none">
+					<h2>Performance Slowdowns</h2>
+					<ul>
+						<li>Jobs Index</li>
+						<li>Schedule</li>
+						<li>Reports</li>
+						<li>...other</li>
+					</ul>
+				</section>
+
+				<!-- Old Stack Issues -->
+				<section data-transition="none">
+					<h2>Old Stack Challenges</h2>
+					<img src="" />
+				</section>
+
+				<section data-transition="none">
+					<h2>Security</h2>
+					<img src="img/dependabot.png" />
+				</section>
+
+				<section data-transition="none">
+					<h2>Performance</h2>
+					<ul>
+						<li>Inefficient algorithms</li>
+						<li>Memory leaks</li>
+						<li>Poor caching</li>
+					</ul>
+				</section>
+
+				<section data-transition="none">
+					<h2>Tooling</h2>
+					<ul>
+						<li>Outdated</li>
+						<li>Unmaintained</li>
+						<li>Prone to failures</li>
+					</ul>
+				</section>
+
+				<!-- Proposal -->
+				<section data-transition="none">
+					<h2>Proposal: Debt Sprints</h2>
+					<ul>
+						<li><strong>Dedicated Time</strong> - One day per sprint</li>
+						<li><strong>Quarterly Focus</strong> - Major debt reduction initiatives</li>
+						<li><strong>Team Participation</strong> - All developers involved</li>
+						<li><strong>Documentation</strong> - Track progress and decisions</li>
+					</ul>
+				</section>
+
+				<!-- Benefits -->
+				<section data-transition="none">
+					<h2>Expected Benefits</h2>
+					<ul>
+						<li>Improved application performance</li>
+						<li>Enhanced security posture</li>
+						<li>Better maintainability</li>
+						<li>Reduced long-term costs</li>
+					</ul>
+				</section>
+
+				<!-- Success Image -->
+				<section data-transition="none">
+					<img src="img/sad.png" alt="Sad face" style="width: 100%; height: auto;">
+				</section>
+				<section data-auto-animate data-transition="fade">
+					<img src="img/cheering.png" alt="Cheering crowd" style="width: 100%; height: auto;">
+				</section>
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+				autoSlide: 5000000,
+				autoSlideStoppable: false,
+				loop: true,
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+		</script>
+	</body>
+</html>
